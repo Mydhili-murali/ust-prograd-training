@@ -26,9 +26,9 @@ class BankAccount{
     public void withdrawal(int amt) {
         if(total>amt )
         {
-                System.out.println(name + " withdrawn " + amt + " from account number " + accno);
-                total = total - amt;
-                System.out.println("Total amount after withdrawal is " + total);
+            System.out.println(name + " withdrawn " + amt + " from account number " + accno);
+            total = total - amt;
+            System.out.println("Total amount after withdrawal is " + total);
 
 
 
@@ -42,17 +42,16 @@ class BankAccount{
 }
 
 public class Account {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the name: ");
-        String name= scanner.nextLine();
+        String name = scanner.nextLine();
         System.out.println("Enter the account number: ");
-        String account =scanner.nextLine();
-        BankAccount ob1=new BankAccount(name,account);
+        String account = scanner.nextLine();
+        BankAccount ob1 = new BankAccount(name, account);
         System.out.println("Enter a choice from( 1- 3 )......1.Display details....2.Deposit......3.Withdrawal.........");
-        int choice=scanner.nextInt();
+        int choice = scanner.nextInt();
         switch (choice) {
             case 1 -> ob1.display();
             case 2 -> {
@@ -67,12 +66,6 @@ public class Account {
             }
             default -> System.out.println("Enter valid choice....");
         }
-
-
-
-
-
-
 
     }
 }
