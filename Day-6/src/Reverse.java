@@ -8,7 +8,7 @@ public class Reverse {
         PrintArray<Integer> printArray=new PrintArray<Integer>();
         PrintArray<String> printArray1=new PrintArray<String>();
         printArray.printArray(intArray);
-        System.out.println("");
+        System.out.println(" ");
         printArray1.printArray(stringArray);
 
     }
