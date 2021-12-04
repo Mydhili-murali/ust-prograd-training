@@ -1,0 +1,33 @@
+Admin:
+	Properties: id,name,password
+	Methods:login()
+		addCategory()
+		additem()
+		manageItem()
+		manageOrder()
+		manageRefund()
+		makeShipment()
+		confirmDelivery()
+		logout()
+User:
+	Properties: id,name,address,phno
+	Methods:login()
+		register()
+		searchItems()
+		viewItem()
+		addToCart()
+		makeOrder()
+		makePayment()
+		changePassword()
+		cancelOrder()
+		deleteFromCart()
+		updateProfile()
+		logout()
+Products:
+	Properties:id,name,group,subgroup
+
+Payment:
+	Properties:customerId,name,cardType,cardNo
+
+Cart:
+	Properties:productId,numberOfProducts,price,total

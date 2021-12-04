@@ -1,0 +1,38 @@
+Admin:
+	Properties: name,password
+	Methods:login()
+		manageAccount()
+		managePostJobs()
+		manageInterviewCalls()
+		manageRegistration()
+		viewProfile()
+		updateProfile()
+		viewFeedbacks()
+		logout()
+Candidate:
+	Properties: name,phno,email,address,gender
+	Methods:login()
+		register()
+		searchJobs()
+		updateProfile()
+		viewProfile()
+		applyForJobs()
+		addFeedbacks()
+		delete()
+		logout()
+Company: 
+	Properties: cName,cId,address,contactNo,email
+	Methods:login()
+		register()
+		postJobs()
+		updateProfile()
+		viewProfile()
+		addFeedbacks()
+		delete()
+		logout()
+JobPosts:
+	Properties: jobId,companyId,companyName,jobTitle,package,startDate,endDate,place,noVacancies
+	Methods:add()
+		update()
+		delete() 
+
