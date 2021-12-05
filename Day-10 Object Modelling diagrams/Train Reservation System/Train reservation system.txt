@@ -1,0 +1,42 @@
+Admin:
+	Properties:id,name,password
+	Methods:login()
+		manageAccounts()
+		manageBooking()
+		updateProfile()
+		changePassword()
+		logout()
+Clerk:
+	Properties:id,name,password
+	Methods:login()
+		register()
+		updateProfile()
+		managePayment()
+		manageRefunds()
+		manageTickets()
+		printTickets()
+		manageTrainSchedule()
+		changePassword()
+		logout()
+Ticket:
+	Properties:pnrno,status,numOfPersons
+	Methods:newTicket()
+		deleteTicket()
+
+Payment:
+	Properties:amount
+
+Train:
+	Properties:trainNo,trainName
+
+Passenger:
+	Properties:name,address,age,gender,password
+	Methods:login()
+		register()
+		updateProfile()
+		changePassword()
+		bookTicket()
+		searchTrains()
+		cancelTicket()
+		makePayment()
+		logout()
