@@ -38,7 +38,7 @@ public void setup(){
         Assertions.assertEquals(answer,expected);
     }
     @Test
-    public void throwArithmeticExceptionWhenOneSideIsZero()
+    public void ifLengthTwoAndBreadthZeroThrowsArithmeticException()
     {
         //AreaOfRectangle rectangle=new AreaOfRectangle();
         //double answer=rectangle.area(2.5,2.2);
@@ -47,12 +47,12 @@ public void setup(){
         Assertions.assertThrows(ArithmeticException.class,()->rectangle.area(2,0));
     }
    @Test
-   public void throwArithmeticExceptionWhenOneSideIsNegative()
+   public void ifLengthNegativeTwoAndBreadthTwoThrowsArithmeticException()
    {
        Assertions.assertThrows(ArithmeticException.class,()->rectangle.area(-2,2));
    }
     @Test
-    public void throwArithmeticExceptionWhenTwoSidesAreEqual()
+    public void ifLengthTwoAndBreadthTwoThrowsArithmeticException()
     {
         Assertions.assertThrows(ArithmeticException.class,()->rectangle.area(2,2));
     }
