@@ -1,0 +1,18 @@
+//import java.io.IOException;
+
+class LengthConverter {
+
+    public double centimeterToCentimeter(double lengthInCentimeter){return magnitudeInCentimeter;}
+    public double centimeterToMeter(double magnitudeInCentimeter){
+        return magnitudeInCentimeter/100;
+    }
+    public double meterToCentimeter(double magnitudeInMeter){return magnitudeInMeter*100;
+    }
+    public double centimeterToKilometer(double magnitudeInCentimeter){
+        return magnitudeInCentimeter/100000;
+    }
+    public double kilometerToCentimeter(double magnitudeInKilometer){return magnitudeInKilometer*100000;}
+
+
+
+}
