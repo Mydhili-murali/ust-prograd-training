@@ -10,20 +10,38 @@ public class CurrencyConverter {
     }
 
     public void addRupeesToWallet(double currencyValueInRupees) {
-        walletBalance += currencyValueInRupees;
+        if (currencyValueInRupees < 0) {
+            throw new IllegalArgumentException("Cannot add negative money to wallet");
+        } else {
+            walletBalance += currencyValueInRupees;
 
+        }
     }
 
     public void addDollarsToWallet(double currencyValueInDollars) {
-        walletBalance += dollarToRupees(currencyValueInDollars);
+        if (currencyValueInDollars < 0) {
+            throw new IllegalArgumentException("Cannot add negative money to wallet");
+        } else {
+            walletBalance += dollarToRupees(currencyValueInDollars);
+        }
     }
 
     public void withdrawRupeesFromWallet(double currencyValueInRupees) {
-        walletBalance -= currencyValueInRupees;
+        if (currencyValueInRupees <= 0 || currencyValueInRupees > walletBalance) {
+            throw new IllegalArgumentException("Cannot withdraw money from wallet");
+        } else {
+            walletBalance -= currencyValueInRupees;
+
+        }
+
     }
 
     public void withdrawDollarsFromWallet(double currencyValueInDollars) {
-        walletBalance -= dollarToRupees(currencyValueInDollars);
+        if (currencyValueInDollars <= 0 || currencyValueInDollars > walletBalance) {
+            throw new IllegalArgumentException("Cannot withdraw money from wallet");
+        } else {
+            walletBalance -= dollarToRupees(currencyValueInDollars);
+        }
     }
 
     public double getWalletBalance(String preferredCurrency) {

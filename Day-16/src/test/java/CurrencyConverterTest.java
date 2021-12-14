@@ -36,6 +36,17 @@ class CurrencyConverterTest {
             assertEquals(4, currencyConverter.getWalletBalance("$"));
             //System.out.println(currencyConverter.getWalletBalance("$"));
         }
+
+        @Test
+        public void checkExceptionWhenAddingNegativeMoneyToWallet() {
+            assertThrows(IllegalArgumentException.class, () -> currencyConverter.addRupeesToWallet(-74.85));
+            assertThrows(IllegalArgumentException.class, () -> {
+                currencyConverter.addDollarsToWallet(-1);
+                currencyConverter.getWalletBalance("$");
+            });
+
+
+        }
     }
 
     @Nested
@@ -57,6 +68,24 @@ class CurrencyConverterTest {
             currencyConverter.withdrawRupeesFromWallet(149.7);
             assertEquals(2, currencyConverter.getWalletBalance("$"));
             //System.out.println(currencyConverter.getWalletBalance("$"));
+        }
+
+        @Test
+        public void checkExceptionWhenWithdrawingMoneyFromWallet() {
+            assertThrows(IllegalArgumentException.class, () -> {
+                currencyConverter.addRupeesToWallet(74.85);
+                currencyConverter.withdrawRupeesFromWallet(75.45);
+            });
+
+            assertThrows(IllegalArgumentException.class, () -> {
+                currencyConverter.addDollarsToWallet(1);
+                currencyConverter.getWalletBalance("$");
+                currencyConverter.withdrawDollarsFromWallet(-1);
+            });
+
+            assertThrows(IllegalArgumentException.class, () -> currencyConverter.withdrawDollarsFromWallet(0));
+
+
         }
 
 
