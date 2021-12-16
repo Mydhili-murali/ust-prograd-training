@@ -1,5 +1,4 @@
 package src;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -8,7 +7,7 @@ public class EmployeeFile implements Serializable {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         int choice = 0;
         while (choice != 4) {
-            System.out.println("\n1. View Existing Employees \n2. Add new Employee \n3. Update Existing Employee \n4. Quit");
+            System.out.println("\n1. View Existing Employees\n2. Add new Employee \n3. Update Existing Employee \n4. Quit");
             System.out.println("\nEnter your choice: ");
             Scanner scanner = new Scanner(System.in);
             choice = scanner.nextInt();
