@@ -8,7 +8,7 @@ class NoteKeeperTest {
     NoteKeeper noteKeeper = new NoteKeeper();
 
     @BeforeEach
-    public void AddItems() {
+    public void addItems() {
         noteKeeper.addList("Drink Water",true);
         noteKeeper.addList("Eat Healthy",false);
         noteKeeper.addList("Exercise Daily",true);
@@ -17,14 +17,14 @@ class NoteKeeperTest {
 
 
     @Test
-    public void AddItemsToTodoListTest() {
+    public void addItemsToTodoListTest() {
         String actualList = noteKeeper.checkList("Drink Water");
         assertEquals("Drink Water", actualList);
     }
 
 
     @Test
-    public void RemoveItemsFromTodoListTest() {
+    public void removeItemsFromTodoListTest() {
         boolean actualList = noteKeeper.removeList("Eat Healthy");
         assertEquals(true, actualList);
     }
