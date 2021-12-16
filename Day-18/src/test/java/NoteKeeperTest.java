@@ -17,21 +17,21 @@ class NoteKeeperTest {
 
 
     @Test
-    public void addItemsToTodoListTest() {
+    public void addItemsToTodoList() {
         String actualList = noteKeeper.checkList("Drink Water");
         assertEquals("Drink Water", actualList);
     }
 
 
     @Test
-    public void removeItemsFromTodoListTest() {
+    public void removeItemsFromTodoList() {
         boolean actualList = noteKeeper.removeList("Eat Healthy");
         assertEquals(true, actualList);
     }
 
 
     @Test
-    public void unRemoveItemsFromTodoListTest() {
+    public void unRemoveItemsFromTodoList() {
         boolean actualList = noteKeeper.unRemoveList("Eat Healthy");
         assertEquals(true, actualList);
     }
