@@ -1,0 +1,20 @@
+Dec 15, 2021 1:11:59 PM CurrencyConverterApplication main
+INFO: Program Started...
+Dec 15, 2021 1:12:04 PM CurrencyConverterApplication main
+INFO: User selected Rupees to US Dollar conversion
+Dec 15, 2021 1:12:19 PM CurrencyConverterApplication main
+INFO: User entered amount76.08
+Dec 15, 2021 1:12:26 PM CurrencyConverterApplication main
+INFO: User selected Rupees to AUD conversion
+Dec 15, 2021 1:12:33 PM CurrencyConverterApplication main
+INFO: User entered amount59.21
+Dec 15, 2021 1:12:36 PM CurrencyConverterApplication main
+INFO: User selected Rupees to Canadian Dollar conversion
+Dec 15, 2021 1:12:42 PM CurrencyConverterApplication main
+INFO: User entered amount59.21
+Dec 15, 2021 1:12:48 PM CurrencyConverterApplication main
+INFO: User selected Rupees to Arab Emirates Dirham conversion
+Dec 15, 2021 1:12:53 PM CurrencyConverterApplication main
+INFO: User entered amount20.71
+Dec 15, 2021 1:12:58 PM CurrencyConverterApplication main
+INFO: Program Stopped...
