@@ -1,0 +1,26 @@
+body {
+
+    background-image:url("./images/image.jpg");
+    background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     height: auto;
+     min-height: 710px;
+     padding-top: 60px;
+     color: red;
+}
+
+h1 {
+    color: green;
+    text-align: left;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    font-color: Red;
+}
+#form{
+color: yellow;
+}
