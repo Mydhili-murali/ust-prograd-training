@@ -12,8 +12,8 @@ public class AbcBankApplication {
 		Customer customer1=context.getBean(Customer.class);
 		Customer customer2=context.getBean(Customer.class);
 		FundTransfer fundTransfer=context.getBean(FundTransfer.class);
-		customer1.setDetails("Mydhili Murali","1234534562","9876452341","Vallachira");
-		customer2.setDetails("Nimin Murali","1234534562","9234522345","Kunnamangalam");
+		customer1.setDetails("Mydhili Murali","9876452341","1234534562","Vallachira",4000);
+		customer2.setDetails("Nimin Murali","9234522345","3244534562","Kunnamangalam",3000);
 		fundTransfer.fundTransfer(500,customer1,customer2);
 	}
 
