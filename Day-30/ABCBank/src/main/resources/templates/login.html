@@ -18,19 +18,20 @@
         </div>
     </div>
     <div id="b">
-    <form action="/details" id="form" method="POST">
+    <form action="/login" id="form" method="POST">
         <marquee direction="left"><h3><span th:text=" ${errorMessage}"/></h3></marquee>
+        <marquee direction="left"><h3><span th:text=" ${registerSuccessMessage}"/></h3></marquee>
         <table border="3" cellpadding="2" align="center" >
             <tr>
-                <th colspan="2" >Login Here</th>
+                <h2  style="text-align:center">Login Here</h2>
             </tr>
             <tr>
-                <td>Enter Username</td>
-                <td><input type="text" name="username" placeholder="Enter username" style="font-color:blue" required="true"/></td>
+                <td>Enter Username:</td>
+                <td><input type="text" class="form-control" name="username" placeholder="Enter username" style="font-color:blue" required="true"/></td>
             </tr>
            <tr>
-           <td>Enter Password</td>
-               <td><input type="password" name="password" placeholder="Enter password" style="font-color:blue" required="true"/></td>
+           <td>Enter Password:</td>
+               <td><input type="password" class="form-control" name="password" placeholder="Enter password" style="font-color:blue" required="true"/></td>
            </tr>
             <tr>
                 <td colspan="2"><input type="submit" name="login" value="login" class="btn btn-primary"/></td>

@@ -7,15 +7,15 @@ background-size: cover;
      height: auto;
      min-height: 710px;
      padding-top: 60px;
-     color: blue;
+    color:blue;
 }
 #a{
 height:300px;
 margin:auto;
 
 }
-#form{
-font-color:blue;
+form{
+font-color:white;
 }
 
 #form1{
@@ -59,4 +59,9 @@ p {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+td{
+font-family:serif;
+font-color:white;
+ font-size: 25px;
 }
